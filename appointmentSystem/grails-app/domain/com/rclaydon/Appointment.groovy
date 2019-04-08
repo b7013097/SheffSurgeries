@@ -1,23 +1,14 @@
 package com.rclaydon
 
 class Appointment {
-Date appDate;
-float appTime;
-int appDuration;
-int roomNumber;
+Date appDate
+String appTime
+int appDuration
+String roomNumber
     static constraints = {
-appDate nullable: false
-appDate blank: false
-
-appTime nullable: false
-appTime blank: false
-
-appDuration nullable: false
-appDuration blank: false
-appDuration: 30..60
-
-roomNumber nullable: false
-roomNumber blank: false
-
+	appDate nullable:false, blank:false;
+	appTime nullable:false, blank:false;
+	appDuration nullable:false, blank:false;
+	roomNumber nullable:false, blank:false;
     }
 }
