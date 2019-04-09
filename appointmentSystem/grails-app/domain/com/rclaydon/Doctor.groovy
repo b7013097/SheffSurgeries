@@ -11,17 +11,19 @@ String doctorOffice
 int doctorPhone
 String bio
 
+static hasMany=[patients:Patient, appointments:Appointment, prescriptions:Prescription, surgeries:Surgery]
+static belongsTo=[Surgery]
+
+
     static constraints = {
-
-
-	fullName  nullable:false, blank:false
-	qualification nullable:false, blank:false
-	position nullable:false, blank:false
-	doctorEmail nullable:false, blank:false
-	password nullable:false, blank:false
-	doctorOffice nullable:false, blank:false
+	fullName  nullable:true, blank:false
+	qualification nullable:true, blank:false
+	position nullable:true, blank:false
+	doctorEmail nullable:true, blank:false
+	password nullable:true, blank:false
+	doctorOffice nullable:true, blank:false
 	doctorPhone nullable:false, blank:false
-	bio nullable:false, blank:false
+	bio nullable:true, blank:false
 
     }
 }

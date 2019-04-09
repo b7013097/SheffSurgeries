@@ -4,17 +4,22 @@ class Patient {
 String patientName
 String patientAddress
 String patientResidence
-float patientDob
+Date patientDob
 String patientID
 Date dateRegistered
-int patientPhone
+String patientPhone
+
+static hasMany=[prescriptions:Prescription, surgeries:Surgery, appointments:Appointment]
+static belongsTo=[Surgery]
+
+
 
     static constraints = {
-	patientName nullable:false,blank: false;
-	patientAddress nullable:false,blank: false;
-	patientResidence nullable:false,blank: false;
+	patientName nullable:true,blank: false;
+	patientAddress nullable:true,blank: false;
+	patientResidence nullable:true,blank: false;
 	patientDob nullable:false,blank: false;
-	patientID nullable:false,blank: false;
+	patientID nullable:true,blank: false;
 	dateRegistered nullable:false,blank: false;
 	patientPhone nullable:false,blank: false;
 

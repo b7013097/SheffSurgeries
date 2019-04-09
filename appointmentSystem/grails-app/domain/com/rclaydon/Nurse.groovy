@@ -6,11 +6,16 @@ String qualifications
 String nurseEmail
 String nurseOffice
 int nursePhone
+
+static hasMany=[patients:Patient, appointments:Appointment, prescriptions:Prescription, surgeries:Surgery]
+static belongsTo=[Surgery]
+
+
     static constraints = {
-	nurseName nullable:false;
-	qualifications nullable: false;
-	nurseEmail nullable:false,blank: false;
-	nurseOffice nullable:false,blank: false;
+	nurseName nullable:true;
+	qualifications nullable: true;
+	nurseEmail nullable:true,blank: false;
+	nurseOffice nullable:true,blank: false;
 	nursePhone nullable:false,blank: false;
     }
 }
