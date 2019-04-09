@@ -2,6 +2,7 @@ package com.rclaydon
 
 class BootStrap {
 
+
     def init = { servletContext ->
 
 	def patient1 = new Patient(
