@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+<asset:stylesheet src="SheffSurgery.css"/>
+<title>Sheff Surgeries</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>
@@ -13,58 +15,52 @@
 
     <g:layoutHead/>
 </head>
-
 <body>
+<div id="content" role="main">
+<div class="nav">
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-static-top" role="navigation">
-    <a class="navbar-brand" href="/#"><asset:image src="grails.svg" alt="Grails Logo"/></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+	<div class="row">
+	 	
+	<div class="first">
+		<button type="button" class="btn btn-success">
+			<g:link controller="Nurse" action="create">Nurse</g:link>
+	</div>
+	<div class="second">
+		<button type="button" class="btn btn-success">
+			<g:link controller="Doctor" action="create"> Doctor</g:link>
 
-    <div class="collapse navbar-collapse" aria-expanded="false" style="height: 0.8px;" id="navbarContent">
-        <ul class="nav navbar-nav ml-auto">
-            <g:pageProperty name="page.nav"/>
-        </ul>
-    </div>
-
-</nav>
+	<div class="third">
+		<button type="button" class="btn btn-success">
+			<g:link controller="Appointment" action="create"> Appointment</g:link>
+		</button>
+	</div>
+	<div class="fourth">
+		<button type="button" class="btn btn-success">
+			<g:link controller="Prescription" action="create"> Prescription</g:link>
+		</button>
+	</div>
+	<div class="five">
+		<button type="button" class="btn btn-success">
+			<g:link controller="Receptionist" action="create"> Receptionist</g:link>
+		</button>
+	</div>
+	<div class="six">
+		<button type="button" class="btn btn-success">
+			<g:link controller="Patient" action="create"> Patient</g:link>
+		</button>
+	</div>
+	<div class="seven">
+		<button type="button" class="btn btn-success">
+			<g:link controller="Surgery" action="create"> Surgery</g:link>
+		</button>
+	</div>
+</div>
+</div>
+<div class="banner">
+<h1 align="center">Welcome to Sheff Surgeries</h1>
+<g:loginToggle/>
+</div>
 
 <g:layoutBody/>
-
-<div class="footer row" role="contentinfo">
-    <div class="col">
-        <a href="http://guides.grails.org" target="_blank">
-            <asset:image src="advancedgrails.svg" alt="Grails Guides" class="float-left"/>
-        </a>
-        <strong class="centered"><a href="http://guides.grails.org" target="_blank">Grails Guides</a></strong>
-        <p>Building your first Grails app? Looking to add security, or create a Single-Page-App? Check out the <a href="http://guides.grails.org" target="_blank">Grails Guides</a> for step-by-step tutorials.</p>
-
-    </div>
-    <div class="col">
-        <a href="http://docs.grails.org" target="_blank">
-            <asset:image src="documentation.svg" alt="Grails Documentation" class="float-left"/>
-        </a>
-        <strong class="centered"><a href="http://docs.grails.org" target="_blank">Documentation</a></strong>
-        <p>Ready to dig in? You can find in-depth documentation for all the features of Grails in the <a href="http://docs.grails.org" target="_blank">User Guide</a>.</p>
-
-    </div>
-
-    <div class="col">
-        <a href="https://grails-slack.cfapps.io" target="_blank">
-            <asset:image src="slack.svg" alt="Grails Slack" class="float-left"/>
-        </a>
-        <strong class="centered"><a href="https://grails-slack.cfapps.io" target="_blank">Join the Community</a></strong>
-        <p>Get feedback and share your experience with other Grails developers in the community <a href="https://grails-slack.cfapps.io" target="_blank">Slack channel</a>.</p>
-    </div>
-</div>
-
-
-<div id="spinner" class="spinner" style="display:none;">
-    <g:message code="spinner.alt" default="Loading&hellip;"/>
-</div>
-
-<asset:javascript src="application.js"/>
-
 </body>
 </html>

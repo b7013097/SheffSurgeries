@@ -5,7 +5,7 @@ String nurseName
 String qualifications
 String nurseEmail
 String nurseOffice
-int nursePhone
+String nursePhone
 
 static hasMany=[patients:Patient, appointments:Appointment, prescriptions:Prescription, surgeries:Surgery]
 static belongsTo=[Surgery]

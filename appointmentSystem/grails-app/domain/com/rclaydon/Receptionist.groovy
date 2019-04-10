@@ -5,7 +5,7 @@ String recepName
 String recepEmail
 String recepUsername
 String recepPassword
-int recepPhone
+String recepPhone
 
 static hasMany=[surgeries:Surgery, appointments:Appointment]
 static belongsTo=[Surgery]

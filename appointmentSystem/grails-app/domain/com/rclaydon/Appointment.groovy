@@ -3,7 +3,7 @@ package com.rclaydon
 class Appointment {
 Date appDate
 String appTime
-int appDuration
+String appDuration
 String roomNumber
 
 static hasMany=[surgery:Surgery, patients:Patient]
