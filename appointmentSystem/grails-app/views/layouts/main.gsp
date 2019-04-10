@@ -58,7 +58,6 @@
 </div>
 <div class="banner">
 <h1 align="center">Welcome to Sheff Surgeries</h1>
-<g:loginToggle/>
 </div>
 
 <g:layoutBody/>
